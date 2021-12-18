@@ -31,7 +31,7 @@
   },
   "parachains": [
     {
-      "id": "1000",
+      "id": "2001",
       "bin": null,
       "nodes": [
         {
@@ -69,13 +69,6 @@
           ]
         }
       ]
-    }
-  ],
-  "simpleParachains": [
-    {
-      "id": "1001",
-      "port": 31202,
-      "bin": null
     }
   ],
   "hrmpChannels": [],

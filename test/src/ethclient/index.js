@@ -14,6 +14,7 @@ const BasicOutboundChannel = contracts.contracts.BasicOutboundChannel;
 const IncentivizedOutboundChannel = contracts.contracts.IncentivizedOutboundChannel;
 const BasicInboundChannel = contracts.contracts.BasicInboundChannel;
 const IncentivizedInboundChannel = contracts.contracts.IncentivizedInboundChannel;
+const BeefyLightClient = contracts.contracts.BeefyLightClient;
 
 const IERC777 = require("../../../ethereum/artifacts/@openzeppelin/contracts/token/ERC777/IERC777.sol/IERC777.json")
 /**
@@ -28,6 +29,7 @@ class EthClient {
     this.TestTokenAddress = TestToken.address;
     this.TestToken721Address = TestToken721.address;
     this.ERC721AppAddress = ERC721App.address;
+    this.BeefyLightClientAddress = BeefyLightClient.address;
 
     this.loadApplicationContracts(networkID);
   }
@@ -60,6 +62,10 @@ class EthClient {
     const appIncentivizedInChan = new this.web3.eth.Contract(IncentivizedInboundChannel.abi,
       IncentivizedInboundChannel.address);
     this.appIncentivizedInChan = appIncentivizedInChan;
+
+    const appBeefyLightClient = new this.web3.eth.Contract(BeefyLightClient.abi,
+      BeefyLightClient.address);
+    this.appBeefyLightClient = appBeefyLightClient;
   };
 
   loadERC20Contract() {
@@ -208,6 +214,10 @@ class EthClient {
       })
     });
     return foundEvent;
+  }
+
+  async getLatestBeefyBlock() {
+    return BigNumber(await this.appBeefyLightClient.methods.latestBeefyBlock().call());
   }
 
 }

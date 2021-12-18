@@ -6,3 +6,7 @@ workspace.code-workspace
 
 # Node modules
 node_modules/
+.idea
+snowbridge-e2e-config
+*.log
+.vscode

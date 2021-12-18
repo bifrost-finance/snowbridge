@@ -30,7 +30,7 @@ library ParachainLightClient {
         bytes32 nextAuthoritySetRoot;
     }
 
-    bytes4 public constant PARACHAIN_ID_SCALE = 0xe8030000;
+    bytes4 public constant PARACHAIN_ID_SCALE = 0xd1070000;
 
     struct ParachainVerifyInput {
         bytes ownParachainHeadPrefixBytes;
@@ -71,10 +71,7 @@ library ParachainLightClient {
         // 4. Verify inclusion of the beefy MMR leaf in the beefy MMR root using that `beefyMMRLeaf` as well as
         // `_beefyMMRLeafIndex`, `_beefyMMRLeafCount` and `_beefyMMRLeafProof`
         require(
-            beefyLightClient.verifyBeefyMerkleLeaf(
-                beefyMMRLeaf,
-                proof
-            ),
+            beefyLightClient.verifyBeefyMerkleLeaf(beefyMMRLeaf, proof),
             "Invalid proof"
         );
     }
