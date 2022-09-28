@@ -8,10 +8,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/sr25519"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/crypto/sr25519"
 
 	log "github.com/sirupsen/logrus"
 )

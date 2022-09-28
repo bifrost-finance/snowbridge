@@ -7,8 +7,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/crypto/secp256k1"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/secp256k1"
 )
 
 func TestConnect(t *testing.T) {

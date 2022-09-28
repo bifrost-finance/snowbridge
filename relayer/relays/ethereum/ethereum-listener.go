@@ -17,11 +17,11 @@ import (
 	"github.com/sirupsen/logrus"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/snowfork/snowbridge/relayer/chain"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/contracts/basic"
-	"github.com/snowfork/snowbridge/relayer/contracts/incentivized"
-	"github.com/snowfork/snowbridge/relayer/relays/ethereum/syncer"
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/basic"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/incentivized"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/ethereum/syncer"
 
 	log "github.com/sirupsen/logrus"
 )

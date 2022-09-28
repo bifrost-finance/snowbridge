@@ -16,7 +16,7 @@ module.exports = {
     },
     ropsten: {
       provider: () => new HDWalletProvider(
-        [process.env.ROPSTEN_PRIVATE_KEY],
+        [process.env.PRIVATE_KEY],
         "https://ropsten.infura.io/v3/".concat(process.env.INFURA_PROJECT_ID)
       ),
       network_id: 3,
@@ -25,7 +25,7 @@ module.exports = {
     },
     goerli: {
       provider: () => new HDWalletProvider(
-        [process.env.ROPSTEN_PRIVATE_KEY],
+        [process.env.PRIVATE_KEY],
         "https://goerli.infura.io/v3/".concat(process.env.INFURA_PROJECT_ID)
       ),
       network_id: 5,
@@ -38,7 +38,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "0.8.9",
+      version: "0.8.17",
       optimizer: {
         enabled: false,
         runs: 200

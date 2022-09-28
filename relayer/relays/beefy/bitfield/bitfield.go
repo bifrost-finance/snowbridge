@@ -13,7 +13,7 @@ func reverse(thing []byte) {
 }
 
 // New returns a Bitfield initialized from the Solidity representation of a Bitfield (an array of uint256). See below:
-// https://github.com/Snowfork/snowbridge/blob/18c6225b21782170156729d54a35404d876a2c7b/ethereum/contracts/utils/Bitfield.sol
+// https://github.com/bifrost-finance/snowbridge/blob/18c6225b21782170156729d54a35404d876a2c7b/ethereum/contracts/utils/Bitfield.sol
 func New(input []*big.Int) Bitfield {
 	const length = 256 / 8
 	result := make(Bitfield, length*len(input))

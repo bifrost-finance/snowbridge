@@ -6,13 +6,13 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/cache"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/header/syncer"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/header/syncer/scale"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/writer"
 	"github.com/ethereum/go-ethereum/common"
 	log "github.com/sirupsen/logrus"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/cache"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/header/syncer"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/header/syncer/scale"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/writer"
 	"golang.org/x/sync/errgroup"
 )
 

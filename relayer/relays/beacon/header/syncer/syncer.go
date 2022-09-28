@@ -8,11 +8,11 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/header/syncer/scale"
 	"github.com/ethereum/go-ethereum/common"
 	ssz "github.com/ferranbt/fastssz"
 	log "github.com/sirupsen/logrus"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/header/syncer/scale"
 )
 
 var ErrCommitteeUpdateHeaderInDifferentSyncPeriod = errors.New("not found")

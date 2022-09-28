@@ -6,7 +6,7 @@ package parachain_test
 import (
 	"testing"
 
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
 	"github.com/stretchr/testify/assert"
 )
 

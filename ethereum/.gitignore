@@ -7,3 +7,7 @@ artifacts/
 .deployments/
 coverage.json
 coverage/
+
+.env*
+!.env.project
+!.env.vault

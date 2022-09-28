@@ -15,11 +15,11 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/contracts/basic"
-	"github.com/snowfork/snowbridge/relayer/contracts/incentivized"
-	"github.com/snowfork/snowbridge/relayer/contracts/opaqueproof"
-	"github.com/snowfork/snowbridge/relayer/crypto/keccak"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/basic"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/incentivized"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/opaqueproof"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/keccak"
 
 	gsrpcTypes "github.com/snowfork/go-substrate-rpc-client/v4/types"
 

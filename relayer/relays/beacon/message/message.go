@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/config"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/writer"
 	log "github.com/sirupsen/logrus"
-	"github.com/snowfork/snowbridge/relayer/chain"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/config"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/writer"
 	"golang.org/x/sync/errgroup"
 )
 

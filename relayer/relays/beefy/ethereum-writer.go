@@ -17,9 +17,9 @@ import (
 
 	"github.com/sirupsen/logrus"
 
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/contracts/beefyclient"
-	"github.com/snowfork/snowbridge/relayer/relays/beefy/bitfield"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/beefyclient"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beefy/bitfield"
 
 	log "github.com/sirupsen/logrus"
 )

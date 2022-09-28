@@ -9,11 +9,11 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/sr25519"
+	ethereumRelay "github.com/bifrost-finance/snowbridge/relayer/relays/ethereum"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/crypto/sr25519"
-	ethereumRelay "github.com/snowfork/snowbridge/relayer/relays/ethereum"
 )
 
 func TestWrite(t *testing.T) {

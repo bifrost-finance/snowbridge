@@ -5,10 +5,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/crypto/secp256k1"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/secp256k1"
 
 	log "github.com/sirupsen/logrus"
 )

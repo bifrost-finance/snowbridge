@@ -6,7 +6,7 @@ package cmd
 import (
 	"os"
 
-	"github.com/snowfork/snowbridge/relayer/cmd/run"
+	"github.com/bifrost-finance/snowbridge/relayer/cmd/run"
 	"github.com/spf13/cobra"
 )
 

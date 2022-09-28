@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/beefyclient"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/keccak"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/contracts/beefyclient"
-	"github.com/snowfork/snowbridge/relayer/crypto/keccak"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
 )
 
 type InitialRequestParams struct {

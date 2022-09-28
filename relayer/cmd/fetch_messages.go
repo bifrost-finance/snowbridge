@@ -12,16 +12,16 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/basic"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/incentivized"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
 	gethCommon "github.com/ethereum/go-ethereum/common"
 	gethTypes "github.com/ethereum/go-ethereum/core/types"
 	gethTrie "github.com/ethereum/go-ethereum/trie"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/contracts/basic"
-	"github.com/snowfork/snowbridge/relayer/contracts/incentivized"
 )
 
 func fetchMessagesCmd() *cobra.Command {

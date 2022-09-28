@@ -4,11 +4,11 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/keccak"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
 	log "github.com/sirupsen/logrus"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/crypto/keccak"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
 	"github.com/spf13/cobra"
 )
 

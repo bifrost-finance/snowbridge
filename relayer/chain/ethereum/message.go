@@ -7,14 +7,14 @@ import (
 	"bytes"
 	"encoding/hex"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
 	"github.com/ethereum/go-ethereum/common"
 	etypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/rlp"
 	etrie "github.com/ethereum/go-ethereum/trie"
 	"github.com/sirupsen/logrus"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
 
 	log "github.com/sirupsen/logrus"
 )

@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
 	etypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/rlp"
 	"github.com/sirupsen/logrus"
@@ -15,7 +16,6 @@ import (
 	"github.com/snowfork/ethashproof/ethash"
 	"github.com/snowfork/go-substrate-rpc-client/v4/scale"
 	types "github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain"
 )
 
 type HeaderID struct {

@@ -2,12 +2,11 @@
 
 Relayer service that streams transactions from blockchain networks, packages data into messages, and sends the packages to the correlated bridge component.
 
-- [Development](#development)
-- [Configuration](#configuration)
-  - [Secrets](#secrets)
-- [Build](#build)
-- [Run](#run)
-- [Tests](#tests)
+- [Relayer](#relayer)
+  - [Development](#development)
+  - [Contract Bindings](#contract-bindings)
+  - [Configuration](#configuration)
+  - [Tests](#tests)
 
 ## Development
 
@@ -46,7 +45,7 @@ sudo apt install jq
 
 Install [abigen](https://geth.ethereum.org/docs/dapp/native-bindings):
 
-```
+```sh
 go install github.com/ethereum/go-ethereum/cmd/abigen@v1.10.17
 ```
 
@@ -66,7 +65,7 @@ go generate ./...
 
 Note: For local development and testing, we use our E2E test stack described [here](../test/README.md). It automatically generates suitable relayer configurations for testing.
 
-For an example configuration, please consult the [setup script](https://github.com/Snowfork/snowbridge/blob/main/test/scripts/start-services.sh) for our local development stack. Specifically the `start_relayer` bash function.
+For an example configuration, please consult the [setup script](https://github.com/bifrost-finance/snowbridge/blob/main/test/scripts/start-services.sh) for our local development stack. Specifically the `start_relayer` bash function.
 
 ## Tests
 

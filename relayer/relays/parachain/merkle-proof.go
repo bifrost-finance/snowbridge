@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"sort"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
 )
 
 // ByLeafIndex implements sort.Interface based on the LeafIndex field.

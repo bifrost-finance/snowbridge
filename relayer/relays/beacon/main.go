@@ -3,13 +3,13 @@ package beacon
 import (
 	"context"
 
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/crypto/sr25519"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/config"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/header"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/message"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/writer"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/sr25519"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/config"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/header"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/message"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/writer"
 	"golang.org/x/sync/errgroup"
 )
 

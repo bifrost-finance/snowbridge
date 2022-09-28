@@ -6,9 +6,9 @@ package secp256k1
 import (
 	"crypto/ecdsa"
 
+	"github.com/bifrost-finance/snowbridge/relayer/crypto"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/snowfork/snowbridge/relayer/crypto"
 
 	secp256k1 "github.com/ethereum/go-ethereum/crypto"
 )

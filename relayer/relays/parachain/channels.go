@@ -3,9 +3,9 @@ package parachain
 import (
 	"math/big"
 
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/basic"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/incentivized"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/contracts/basic"
-	"github.com/snowfork/snowbridge/relayer/contracts/incentivized"
 )
 
 func (b BasicOutboundChannelMessageBundle) IntoInboundMessageBundle() basic.BasicInboundChannelMessageBundle {

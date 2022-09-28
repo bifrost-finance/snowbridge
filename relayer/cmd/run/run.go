@@ -1,10 +1,10 @@
 package run
 
 import (
-	"github.com/snowfork/snowbridge/relayer/cmd/run/beacon"
-	"github.com/snowfork/snowbridge/relayer/cmd/run/beefy"
-	"github.com/snowfork/snowbridge/relayer/cmd/run/ethereum"
-	"github.com/snowfork/snowbridge/relayer/cmd/run/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/cmd/run/beacon"
+	"github.com/bifrost-finance/snowbridge/relayer/cmd/run/beefy"
+	"github.com/bifrost-finance/snowbridge/relayer/cmd/run/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/cmd/run/parachain"
 	"github.com/spf13/cobra"
 )
 

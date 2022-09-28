@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/snowfork/go-substrate-rpc-client/v4/rpc/author"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
 	"golang.org/x/sync/errgroup"
 )
 

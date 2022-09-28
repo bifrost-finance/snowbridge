@@ -12,15 +12,15 @@ import (
 	gethTypes "github.com/ethereum/go-ethereum/core/types"
 	"golang.org/x/sync/errgroup"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/basic"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/beefyclient"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/incentivized"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
 	gsrpc "github.com/snowfork/go-substrate-rpc-client/v4"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/contracts/basic"
-	"github.com/snowfork/snowbridge/relayer/contracts/beefyclient"
-	"github.com/snowfork/snowbridge/relayer/contracts/incentivized"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
 
 	log "github.com/sirupsen/logrus"
 )

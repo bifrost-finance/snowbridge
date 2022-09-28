@@ -1,9 +1,9 @@
 package beefy
 
 import (
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/keccak"
 	log "github.com/sirupsen/logrus"
 	gsrpcTypes "github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/crypto/keccak"
 )
 
 func Hex(b []byte) string {

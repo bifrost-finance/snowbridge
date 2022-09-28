@@ -6,8 +6,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/bifrost-finance/snowbridge/relayer/relays/parachain"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/relays/parachain"
 	"github.com/stretchr/testify/assert"
 )
 

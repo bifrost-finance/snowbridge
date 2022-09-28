@@ -9,10 +9,10 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/chain"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
 
 	log "github.com/sirupsen/logrus"
 )

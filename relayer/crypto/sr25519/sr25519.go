@@ -6,10 +6,10 @@ package sr25519
 import (
 	"crypto/rand"
 
+	"github.com/bifrost-finance/snowbridge/relayer/crypto"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/snowfork/go-substrate-rpc-client/v4/signature"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/crypto"
 )
 
 var _ crypto.Keypair = &Keypair{}

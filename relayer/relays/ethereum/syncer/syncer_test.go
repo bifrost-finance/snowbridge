@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/bifrost-finance/snowbridge/relayer/relays/ethereum/syncer"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/snowfork/snowbridge/relayer/relays/ethereum/syncer"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"golang.org/x/sync/errgroup"

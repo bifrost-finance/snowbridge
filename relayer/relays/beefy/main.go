@@ -6,12 +6,12 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/contracts/beefyclient"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/secp256k1"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/contracts/beefyclient"
-	"github.com/snowfork/snowbridge/relayer/crypto/secp256k1"
 
 	log "github.com/sirupsen/logrus"
 )
@@ -64,7 +64,7 @@ func (relay *Relay) Start(ctx context.Context, eg *errgroup.Group) error {
 	}
 
 	log.WithFields(log.Fields{
-		"beefyBlock": initialBeefyBlock,
+		"beefyBlock":     initialBeefyBlock,
 		"validatorSetID": initialValidatorSetID,
 	}).Info("Retrieved current BeefyClient state")
 

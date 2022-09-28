@@ -8,39 +8,39 @@ The E2E tests run against local deployments of the parachain, relayer, the ether
 * Development environment for Rust and Substrate. See parachain [requirements](../parachain/README.md#requirements).
 * Node 16. Can install using [nvm](https://github.com/nvm-sh/nvm#installing-and-updating):
 
-  ```bash
-  nvm install 16.17.0
-  nvm use 16.17.0
-  ```
+```bash
+nvm install 16.17.0
+nvm use 16.17.0
+```
 
 * Development environment for Ethereum smart contracts.
 
-  ```bash
-  (cd ../ethereum && yarn install)
-  ```
+```bash
+(cd ../ethereum && yarn install)
+```
 
 * Development environment for the relay services. See setup [instructions](../relayer/README.md#Development).
-
-* `jq` - https://stedolan.github.io/jq/download/
-* geth - https://geth.ethereum.org/docs/install-and-build/installing-geth `go install github.com/ethereum/go-ethereum/cmd/geth@v1.10.23`
+* `jq` - <https://stedolan.github.io/jq/download/>
+* geth - <https://geth.ethereum.org/docs/install-and-build/installing-geth> `go install github.com/ethereum/go-ethereum/cmd/geth@latest`
 * g++ (required for lodestar) is available in the `build-essential` package: `apt install build-essential`
-* lodestar - https://chainsafe.github.io/lodestar/install/source/ Use `v1.1.0`.
+* lodestar - <https://chainsafe.github.io/lodestar/install/source/> Use `v1.1.0`.
 
-  ```bash
-  yarn global add @chainsafe/lodestar@1.0.0
-  ```
+```bash
+yarn global add @chainsafe/lodestar@1.1.0
+```
 
 * sponge - Is available in the `moreutils` package.
 
-  ```bash
-  apt install moreutils
-  ```
+```bash
+apt install moreutils
+sudo pacman -S moreutils
+```
 
 * polkadot-launch
 
-  ```bash
-  yarn global add polkadot-launch@2.3.0
-  ```
+```bash
+yarn global add polkadot-launch@latest
+```
 
 * direnv - https://direnv.net/
 
@@ -58,6 +58,7 @@ yarn install
 * Checkout tag `v0.9.28`.
 
 Example:
+
 ```bash
 git clone -n https://github.com/paritytech/polkadot.git
 cd /path/to/polkadot
@@ -71,7 +72,8 @@ cargo build --release
 Create an `.envrc` file in which to hold environment config, using [.envrc-example](.envrc-example) as a template. Make sure to override the `POLKADOT_BIN` variable to the location of the polkadot binary built in the previous step.
 
 Example:
-```
+
+```sh
 POLKADOT_BIN=/home/sally/code/polkadot/target/release/polkadot
 ```
 
@@ -84,6 +86,7 @@ direnv allow
 ## Launch the testnet
 
 Run the following script
+
 ```bash
 scripts/start-services.sh
 ```
@@ -91,9 +94,9 @@ scripts/start-services.sh
 Wait until the "Testnet has been initialized" message
 
 Go to polkadot-js and wait until the parachain has started producing blocks:
-https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A11144#/explorer
+<https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A11144#/explorer>
 
-You can see the relay chain by connecting to https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer
+You can see the relay chain by connecting to <https://polkadot.js.org/apps/?rpc=ws%3A%2F%2F127.0.0.1%3A9944#/explorer>
 
 Confirm the block number is > 2
 
@@ -110,6 +113,7 @@ yarn test test/bootstrap.js
 ```
 
 Now individual tests can be run, like the following:
+
 ```bash
 yarn test --grep 'should transfer ETH from Substrate to Ethereum \(incentivized channel\)'
 ```
@@ -128,15 +132,16 @@ The bootstrap tests will be called automatically as part of the full suite.
 
 The `start-services.sh` script writes the following logs:
 
-- Parachain nodes: {alice,bob,11144,11155}.log
-- Relay services: {beefy,parachain,beacon}-relay.log
-- Geth (execution client): /tmp/snowbridge/geth.log
-- Lodestar (beacon client): /tmp/snowbridge/lodestar.log
+* Parachain nodes: {alice,bob,11144,11155}.log
+* Relay services: {beefy,parachain,beacon}-relay.log
+* Geth (execution client): /tmp/snowbridge/geth.log
+* Lodestar (beacon client): /tmp/snowbridge/lodestar.log
 
 ### Common issues
 
 Sometimes during development tests will fail for transfers in the substrate->ethereum direction. If you see this, look in `parachain-relay.log` for the following error:
-```
+
+```json
 {"@timestamp":"2022-08-26T15:10:50.263740077+02:00","args":"[--api ws://localhost:11144 --block 0xe2e21a61b017699961b6d87c6aecbae18f2ce0c89bd87e0e8b0d808c26e2aad3]","level":"error","message":"Failed to query events.","name":"snowbridge-query-events","stdErr":"Error: Metadata(IncompatibleMetadata)\n","stdOut":""}
 ```
 

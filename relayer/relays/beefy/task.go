@@ -1,9 +1,9 @@
 package beefy
 
 import (
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
+	"github.com/bifrost-finance/snowbridge/relayer/substrate"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
-	"github.com/snowfork/snowbridge/relayer/substrate"
 )
 
 type Request struct {

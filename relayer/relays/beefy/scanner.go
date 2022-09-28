@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"time"
 
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/keccak"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/merkle"
 	log "github.com/sirupsen/logrus"
 	gsrpc "github.com/snowfork/go-substrate-rpc-client/v4"
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
-	"github.com/snowfork/snowbridge/relayer/crypto/keccak"
-	"github.com/snowfork/snowbridge/relayer/crypto/merkle"
 )
 
 type ScanBlocksResult struct {
@@ -219,8 +219,8 @@ func scanSafeCommitments(ctx context.Context, meta *types.Metadata, api *gsrpc.S
 
 			if !proofIsValid {
 				log.WithFields(log.Fields{
-					"parentNumber": blockNumber,
-					"leafIndex": leafIndex,
+					"parentNumber":   blockNumber,
+					"leafIndex":      leafIndex,
 					"beefyBlockHash": blockHash,
 					"validatorSetID": result.SignedCommitment.Commitment.ValidatorSetID,
 				}).Info("Proof for leaf is invalid")

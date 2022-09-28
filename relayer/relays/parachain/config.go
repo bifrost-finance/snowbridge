@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/snowfork/snowbridge/relayer/config"
+	"github.com/bifrost-finance/snowbridge/relayer/config"
 )
 
 type Config struct {

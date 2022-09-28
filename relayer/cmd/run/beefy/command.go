@@ -10,9 +10,9 @@ import (
 	"strings"
 	"syscall"
 
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/secp256k1"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beefy"
 	"github.com/sirupsen/logrus"
-	"github.com/snowfork/snowbridge/relayer/crypto/secp256k1"
-	"github.com/snowfork/snowbridge/relayer/relays/beefy"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 	"golang.org/x/sync/errgroup"

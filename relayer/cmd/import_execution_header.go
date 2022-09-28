@@ -5,12 +5,12 @@ import (
 	"io/ioutil"
 	"strings"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/parachain"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/sr25519"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/header/syncer"
+	"github.com/bifrost-finance/snowbridge/relayer/relays/beacon/writer"
 	"github.com/ethereum/go-ethereum/common"
 	log "github.com/sirupsen/logrus"
-	"github.com/snowfork/snowbridge/relayer/chain/parachain"
-	"github.com/snowfork/snowbridge/relayer/crypto/sr25519"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/header/syncer"
-	"github.com/snowfork/snowbridge/relayer/relays/beacon/writer"
 	"github.com/spf13/cobra"
 	"golang.org/x/sync/errgroup"
 )

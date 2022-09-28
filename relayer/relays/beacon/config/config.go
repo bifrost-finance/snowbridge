@@ -1,6 +1,6 @@
 package config
 
-import "github.com/snowfork/snowbridge/relayer/config"
+import "github.com/bifrost-finance/snowbridge/relayer/config"
 
 type Config struct {
 	Source SourceConfig `mapstructure:"source"`

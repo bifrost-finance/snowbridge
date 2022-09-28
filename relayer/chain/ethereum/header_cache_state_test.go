@@ -7,11 +7,11 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
 	gethCommon "github.com/ethereum/go-ethereum/common"
 	gethTypes "github.com/ethereum/go-ethereum/core/types"
 	gethTrie "github.com/ethereum/go-ethereum/trie"
 	"github.com/snowfork/ethashproof"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/mock"
 	"golang.org/x/sync/errgroup"

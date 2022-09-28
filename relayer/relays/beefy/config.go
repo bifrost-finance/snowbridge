@@ -1,7 +1,7 @@
 package beefy
 
 import (
-	"github.com/snowfork/snowbridge/relayer/config"
+	"github.com/bifrost-finance/snowbridge/relayer/config"
 )
 
 type Config struct {

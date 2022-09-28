@@ -7,15 +7,15 @@ import (
 	"github.com/snowfork/go-substrate-rpc-client/v4/types"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
-	"github.com/snowfork/snowbridge/relayer/substrate"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/substrate"
 
 	log "github.com/sirupsen/logrus"
 )
 
 type PolkadotListener struct {
-	config *Config
-	conn   *relaychain.Connection
+	config              *Config
+	conn                *relaychain.Connection
 	beefyAuthoritiesKey types.StorageKey
 }
 

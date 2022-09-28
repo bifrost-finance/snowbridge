@@ -13,7 +13,7 @@ import type { HardhatUserConfig } from "hardhat/config";
 
 
 let INFURA_KEY = process.env.INFURA_PROJECT_ID
-let ROPSTEN_KEY = process.env.ROPSTEN_PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000000"
+let PRIVATE_KEY = process.env.PRIVATE_KEY || "0x0000000000000000000000000000000000000000000000000000000000000000"
 let ETHERSCAN_KEY = process.env.ETHERSCAN_API_KEY
 
 const config: HardhatUserConfig = {
@@ -36,18 +36,18 @@ const config: HardhatUserConfig = {
     ropsten: {
       chainId: 3,
       url: `https://ropsten.infura.io/v3/${INFURA_KEY}`,
-      accounts: [ROPSTEN_KEY],
+      accounts: [PRIVATE_KEY],
       gas: 6000000,
     },
     goerli: {
       chainId: 5,
       url: `https://goerli.infura.io/v3/${INFURA_KEY}`,
-      accounts: [ROPSTEN_KEY],
+      accounts: [PRIVATE_KEY],
       gas: 6000000,
     }
   },
   solidity: {
-    version: "0.8.9",
+    version: "0.8.17",
     settings: {
       optimizer: {
         enabled: false,

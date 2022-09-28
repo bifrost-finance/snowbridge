@@ -16,9 +16,9 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/spf13/cobra"
 
+	"github.com/bifrost-finance/snowbridge/relayer/chain/ethereum"
 	gethTypes "github.com/ethereum/go-ethereum/core/types"
 	"github.com/snowfork/go-substrate-rpc-client/v4/scale"
-	"github.com/snowfork/snowbridge/relayer/chain/ethereum"
 	"github.com/spf13/viper"
 )
 

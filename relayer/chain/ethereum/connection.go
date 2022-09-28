@@ -14,7 +14,7 @@ import (
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/sirupsen/logrus"
 
-	"github.com/snowfork/snowbridge/relayer/crypto/secp256k1"
+	"github.com/bifrost-finance/snowbridge/relayer/crypto/secp256k1"
 
 	log "github.com/sirupsen/logrus"
 )

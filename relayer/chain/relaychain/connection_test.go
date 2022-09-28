@@ -7,7 +7,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/snowfork/snowbridge/relayer/chain/relaychain"
+	"github.com/bifrost-finance/snowbridge/relayer/chain/relaychain"
 )
 
 func TestConnect(t *testing.T) {
